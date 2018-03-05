@@ -59,6 +59,15 @@ body ul li img {
 <body>
 	<ul>
 <script>
+	window.onload = function(){
+	  var anchors = document.getElementsByTagName('a');
+	  for (var i=0; i<anchors.length; i++){
+	    if (anchors[i].hostname != window.location.hostname) {
+	        anchors[i].setAttribute('target', '_blank');
+	    }
+	  }
+	}
+
 	function getQueryVariable(r) {
 	    for (var l = window.location.search.substring(1).split("&"), e = 0; e < l.length; e++) {
 	        var t = l[e].split("=");
