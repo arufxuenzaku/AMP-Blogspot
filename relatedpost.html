@@ -23,7 +23,7 @@ body {margin: 0;font-family: Roboto,Arial,sans-serif}
 		display: inline;
 		line-height: 1em;
 		margin: 0;
-		width: 100%;
+		width: 50%;
 		cursor: pointer;
 	 }
  
@@ -106,7 +106,7 @@ body ul li img {
 	}
 	for (var labels = getQueryVariable("labels"), relmaxtampil = getQueryVariable("num"), url = getQueryVariable("url"), res = labels.split(","), i = 0, text = ""; res[i];) text += '<script src="' + url + "/feeds/posts/default/-/" + res[i] + '?alt=json-in-script&amp;callback=relpostimgcuplik&amp;max-results=50" type="text/javascript"><\/script>', i++;
 	var relnojudul = 0,
-	    numchars = 120,
+	    numchars = 80,
 	    reljudul = new Array,
 	    relurls = new Array,
 	    relcuplikan = new Array,
