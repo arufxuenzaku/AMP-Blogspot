@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<HTML amp='amp' class='static_page' dir='ltr' lang='in'>
+<head>
+<meta charset='utf-8'/>
+<meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+<meta content='IE=9; IE=8; IE=7; IE=EDGE; chrome=1' http-equiv='X-UA-Compatible'/>
+<title>Sitemaps</title>
+
+<style amp-custom='amp-custom'>
+/*<![CDATA[*/
+@font-face{font-family:Roboto;font-style:normal;font-weight:400;src:local('Roboto'),local('Roboto-Regular'),url(https://fonts.gstatic.com/s/roboto/v16/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2'),url(https://fonts.gstatic.com/s/roboto/v16/2UX7WLTfW3W8TclTUvlFyQ.woff) format('woff'),url(https://fonts.gstatic.com/s/roboto/v16/QHD8zigcbDB8aPfIoaupKOvvDin1pK8aKteLpeZ5c0A.ttf) format('truetype')}@font-face{font-family:Roboto;font-style:normal;font-weight:500;src:local('Roboto Medium'),local('Roboto-Medium'),url(https://fonts.gstatic.com/s/roboto/v16/RxZJdnzeo3R5zSexge8UUVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2'),url(https://fonts.gstatic.com/s/roboto/v16/RxZJdnzeo3R5zSexge8UUT8E0i7KZn-EPnyo3HZu7kw.woff) format('woff'),url(https://fonts.gstatic.com/s/roboto/v16/RxZJdnzeo3R5zSexge8UUSZ2oysoEQEeKwjgmXLRnTc.ttf) format('truetype')}@font-face{font-family:Roboto;font-style:italic;font-weight:400;src:local('Roboto Italic'),local('Roboto-Italic'),url(https://fonts.gstatic.com/s/roboto/v16/vPcynSL0qHq_6dX7lKVByfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2'),url(https://fonts.gstatic.com/s/roboto/v16/1pO9eUAp8pSF8VnRTP3xnvesZW2xOQ-xsNqO47m55DA.woff) format('woff'),url(https://fonts.gstatic.com/s/roboto/v16/W4wDsBUluyw0tK3tykhXEXYhjbSpvc47ee6xR_80Hnw.ttf) format('truetype')}@font-face{font-family:Roboto;font-style:italic;font-weight:500;src:local('Roboto Medium Italic'),local('Roboto-MediumItalic'),url(https://fonts.gstatic.com/s/roboto/v16/OLffGBTaF0XFOW1gnuHF0Y4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2'),url(https://fonts.gstatic.com/s/roboto/v16/OLffGBTaF0XFOW1gnuHF0YbN6UDyHWBl620a-IRfuBk.woff) format('woff'),url(https://fonts.gstatic.com/s/roboto/v16/OLffGBTaF0XFOW1gnuHF0SwlidHJgAgmTjOEEzwu1L8.ttf) format('truetype')}@font-face{font-family:'Roboto Slab';font-style:normal;font-weight:300;src:local('Roboto Slab Light'),local('RobotoSlab-Light'),url(https://fonts.gstatic.com/s/robotoslab/v7/BngRUXZYTXPIvIBgJJSb6u9mxLCGwR0.woff2) format('woff2'),url(https://fonts.gstatic.com/s/robotoslab/v7/BngRUXZYTXPIvIBgJJSb6u9mxLCGwRs.woff) format('woff'),url(https://cdn.rawgit.com/KompiAjaib/font/master/RobotoSlab-Light.ttf) format('truetype')}
+body{font-family:Roboto,sans-serif}
+
+#table-outer{
+	padding: 7px 10px;
+	margin: 0 auto;
+}
+
+#table-outer label {
+    display: block;
+    text-align: right;
+    margin: 0 10px 0 0;
+    padding: 4px 0 0;
+}
+
+#table-outer input, #table-outer select {
+    width: 100%;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    margin: 0;
+    padding: 5px;
+    font-family: Roboto,sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    outline: 0;
+    color: #333;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#feed-container,
+#feed-container li {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+#post-searcher {
+    display: block;
+    margin: 0;
+    padding: 0
+}
+
+#feed-container {
+	position: relative;
+	padding-top: 15px;
+	margin: 0;
+	float: left;
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	border-top: solid 1px rgba(0,0,0,0.07);
+	border-bottom: solid 1px rgba(0,0,0,0.07);
+}
+
+#feed-container li {
+	background: #ffffff;
+	min-width: 215px;
+	width: 0;
+	max-width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 auto;
+	flex: 1 1 auto;
+	padding: 10px;
+	margin: 0 5px 20px 10px;
+	box-shadow: 0 2px 5px 1px rgba(0,0,0,0.1);
+}
+
+#feed-container li a {
+	color: #000000;
+	position: relative;
+	text-decoration: none;
+	display: block;
+	transition: all .2s ease;
+	line-height: 22px;
+	font-size: 16px;
+	padding: 5px 0;
+}
+
+#feed-container li a:hover {
+    text-decoration: none;
+    color: #E94141
+}
+
+#feed-container li p {
+	margin: 0;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.2px;
+	color: #666666;
+}
+
+#feed-container li img {
+	display: inline;
+	float: left;
+	margin-right: 10px;
+	padding: 0;
+	border-radius: 3px;
+}
+
+#result-desc {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#result-desc div,
+#result-desc span {
+    display: block;
+    margin: 0;
+    padding: 5px 0 7px;
+    color: #D64D52
+}
+
+#result-desc div {
+    color: inherit
+}
+
+#feed-nav {
+    margin: 10px 0 30px;
+    text-align: center;
+    font-weight: 500
+}
+
+#feed-nav a,
+#feed-nav span {
+    padding: 0;
+    color: #757575;
+    text-decoration: none;
+    display: block;
+    height: 30px;
+    line-height: 32px
+}
+
+#feed-nav a,
+#feed-nav span:hover {
+    color: #1B1B1B
+}
+
+#feed-nav a:active,
+#feed-nav a:hover {
+    color: #555
+}
+
+#feed-nav span {
+    cursor: wait
+}
+
+@media screen and (max-width:770px) {
+	#feed-container li img {
+		display: none;
+	}
+}
+
+@media screen and (max-width:414px) {
+
+	#feed-container{
+		padding-top: 0;
+	}
+
+	#feed-container li{
+		box-shadow: unset;
+		padding: 5px;
+		margin: 0 10px;
+		border-bottom: solid 1px rgba(0,0,0,0.07);
+	}
+
+	#feed-container li p{
+		display: none;
+	}
+
+    #table-outer table {
+        width: 100%;
+    }
+
+    #table-outer label,
+    #table-outer table {
+        text-align: center
+    }
+    
+    #table-outer td {
+        display: block;
+        margin: 0 auto 5px;
+        clear: both;
+        float: none
+    }
+
+    #table-outer label {
+        margin: 0
+    }
+    #table-outer {
+        padding: 0
+    }
+}
+
+/*]]>*/
+</style>
+<style amp-boilerplate='amp-boilerplate'>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate='amp-boilerplate'>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+<script async='async' src='https://cdn.ampproject.org/v0.js'></script>
+<script async='async' custom-element='amp-form' src='https://cdn.ampproject.org/v0/amp-form-0.1.js'></script>
+<script async='async' custom-element='amp-sidebar' src='https://cdn.ampproject.org/v0/amp-sidebar-0.1.js'></script>
+
+</head>
+<body itemscope='itemscope' itemtype='http://schema.org/WebPage'>
+
+<table id='table-outer'>
+<tbody>
+<tr><td><label for="feed-order">Sort articles by:</label></td> <td><select id="feed-order"> <option selected="" value="published">Latest articles</option> <option value="updated">The last article is updated</option> </select></td></tr>
+<tr><td><label for="label-sorter">Filter articles by category:</label></td> <td><select disabled="" id="label-sorter"> <option selected="">Loading....</option> </select></td></tr>
+<tr><td><label for="feed-q">Search articles with keywords:</label></td>
+<td>
+<form id="post-searcher">
+<input id="feed-q" type="text" placeholder="Type and press ENTER"/>
+</form>
+</td></tr>
+</tbody>
+</table>
+
+<header id="result-desc"></header>
+<div id='wrapper'>
+<ul id="feed-container"></ul>
+<div id="feed-nav"></div>
+<script type='text/javaScript'>
+document.write;
+var loadToc, loadCategories, _toc = {
+    init: function() {
+        var cfg = {
+                homePage: "https://misterg8s.blogspot.com",
+                maxResults: 10,
+                numChars: 120,
+                thumbWidth: 100,
+                thumbHeight: 120,
+                navText: "Show next article &#9660;",
+                resetToc: "Back to Home",
+                noImage: "//2.bp.blogspot.com/-ex3V86fj4dQ/UrCQQa4cLsI/AAAAAAAAFdA/j2FCTmGOrog/s1100/no-thumbnail.png",
+                loading: "<span>Loading...</span>",
+                counting: "<div>Loading article...</div>",
+                searching: "<span>Searching...</span>"
+            },
+            w = window,
+            d = document,
+            el = function(id) {
+                return d.getElementById(id);
+            },
+            o = {
+                a: el('feed-order'),
+                b: el('label-sorter').parentNode,
+                c: el('post-searcher'),
+                d: el('feed-q'),
+                e: el('result-desc'),
+                f: el('feed-container'),
+                g: el('feed-nav'),
+                h: d.getElementsByTagName('head')[0],
+                i: 0,
+                j: null,
+                k: 'published',
+                l: 0,
+                m: ""
+            },
+            fn = {
+                a: function() {
+                    old = el('temporer-script');
+                    old.parentNode.removeChild(old);
+                },
+                b: function(param) {
+                    var script = d.createElement('script');
+                    script.type = "text/javascript";
+                    script.id = "temporer-script";
+                    script.src = param;
+                    if (el('temporer-script')) fn.a();
+                    o.h.appendChild(script);
+                },
+                c: function(mode, tag, order) {
+                    o.i++;
+                    o.e.innerHTML = cfg.counting;
+                    o.g.innerHTML = cfg[mode == 1 ? "searching" : "loading"];
+                    if (mode === 0) {
+                        fn.b(tag !== null ? cfg.homePage + '/feeds/posts/summary/-/' + tag + '?alt=json-in-script&start-index=' + ((o.i * cfg.maxResults) + 1) + '&max-results=' + cfg.maxResults + '&orderby=' + order + '&callback=loadToc' : cfg.homePage + '/feeds/posts/summary?alt=json-in-script&start-index=' + ((o.i * cfg.maxResults) + 1) + '&max-results=' + cfg.maxResults + '&orderby=' + order + '&callback=loadToc');
+                    } else if (mode == 1) {
+                        fn.b(cfg.homePage + '/feeds/posts/summary?alt=json-in-script&start-index=' + ((o.i * cfg.maxResults) + 1) + '&max-results=' + cfg.maxResults + '&q=' + tag + '&orderby=' + order + '&callback=loadToc');
+                    }
+                    o.j = (tag !== null) ? tag : null;
+                    o.l = mode;
+                    o.a.disabled = true;
+                    o.b.children[0].disabled = true;
+                },
+                d: function(json) {
+                    var _h;
+                    o.g.innerHTML = "";
+                    o.e.innerHTML = o.l == 1 ? '<span>Search results for keywords <b>&#8220;' + o.m + '&#8221;</b> (' + json.feed.openSearch$totalResults.$t + ' Hasil)</span>' : '<div>Total: ' + json.feed.openSearch$totalResults.$t + ' Article</div>';
+                    if ("entry" in json.feed) {
+                        var a = json.feed.entry,
+                            b, c, _d, e = "0 Komentar",
+                            f = "",
+                            g;
+                        for (var i = 0; i < cfg.maxResults; i++) {
+                            if (i == a.length) break;
+                            b = a[i].title.$t;
+                            _d = ("summary" in a[i]) ? a[i].summary.$t.replace(/<br ?\/?>/ig, " ").replace(/<(.*?)>/g, "").replace(/<iframe/ig, "").substring(0, cfg.numChars) : "";
+                            g = ("media$thumbnail" in a[i]) ? a[i].media$thumbnail.url.replace(/.*?:\/\//g, "//").replace(/\/s[0-9]+\-c/, "\/s" + cfg.thumbWidth + "") : cfg.noImage.replace(/\/s[0-9]+\-c/, "\/s" + cfg.thumbWidth + "");
+                            for (var j = 0, jen = a[i].link.length; j < jen; j++) {
+                                c = (a[i].link[j].rel == "alternate") ? a[i].link[j].href : "#";
+                            }
+                            for (var k = 0, ken = a[i].link.length; k < ken; k++) {
+                                if (a[i].link[k].rel == "replies" && a[i].link[k].type == "text/html") {
+                                    e = a[i].link[k].title;
+                                    break;
+                                }
+                            }
+                            _h = d.createElement('li');
+                            _h.innerHTML = '<a href="' + c + '" target="_blank" title="' + b + '"><img style="width:' + cfg.thumbWidth + '%;height:' + cfg.thumbHeight + 'px;" src="' + g + '" alt="' + b + '"/></a><a href="' + c + '" target="_blank" title="' + b + '">' + b + '</a><p>' + _d + '&hellip;</p>';
+                            o.f.appendChild(_h);
+                        }
+                        _h = d.createElement('a');
+                        _h.href = '#load-more';
+                        _h.innerHTML = cfg.navText;
+                        _h.onclick = function() {
+                            fn.c(o.l, o.j, o.k);
+                            return false;
+                        };
+                    } else {
+                        _h = d.createElement('a');
+                        _h.href = '#reset-content';
+                        _h.innerHTML = cfg.resetToc;
+                        _h.onclick = function() {
+                            o.i = -1;
+                            o.e.innerHTML = cfg.counting;
+                            o.f.innerHTML = "";
+                            fn.c(0, null, 'published');
+                            o.a.innerHTML = o.a.innerHTML;
+                            o.b.children[0].innerHTML = o.b.children[0].innerHTML;
+                            return false;
+                        };
+                    }
+                    o.g.appendChild(_h);
+                    o.a.disabled = false;
+                    o.b.children[0].disabled = false;
+                },
+                e: function(json) {
+                    var a = json.feed.category,
+                        b = '<select id="label-sorter"><option value="" selected disabled>Select Category...</option>';
+                    for (var i = 0, len = a.length; i < len; i++) {
+                        b += '<option value="' + encodeURIComponent(a[i].term).replace(/%20/g, " ") + '">' + encodeURIComponent(a[i].term).replace(/%20/g, " ") + '</option>';
+                    }
+                    b += '</select>';
+                    o.b.innerHTML = b;
+                    o.b.children[0].onchange = function() {
+                        o.i = -1;
+                        o.f.innerHTML = "";
+                        o.g.innerHTML = cfg.loading;
+                        fn.c(0, this.value, o.k);
+                    };
+                }
+            };
+        loadToc = fn.d;
+        loadCategories = fn.e;
+        fn.b(cfg.homePage + '/feeds/posts/summary?alt=json-in-script&start-index=' + (o.i + 1) + '&max-results=' + cfg.maxResults + '&orderby=published&callback=loadToc');
+        fn.b(cfg.homePage + '/feeds/posts/summary?alt=json-in-script&max-results=0&orderby=published&callback=loadCategories');
+        o.a.onchange = function() {
+            o.i = -1;
+            o.f.innerHTML = "";
+            o.g.innerHTML = cfg.counting;
+            o.b.children[0].innerHTML = o.b.children[0].innerHTML;
+            fn.c(0, null, this.value);
+            o.k = this.value;
+        };
+        o.c.onsubmit = function() {
+            o.i = -1;
+            o.f.innerHTML = "";
+            o.m = o.d.value;
+            fn.c(1, o.d.value, o.k);
+            return false;
+        };
+    }
+};
+_toc.init();
+</script>
+</div>
+</body>
+</HTML>
