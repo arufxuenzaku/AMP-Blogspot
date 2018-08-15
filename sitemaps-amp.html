@@ -249,7 +249,7 @@ loadCategories,
 _toc= {
     init:function() {
         var cfg= {
-            homePage: getQueryVariable("url"), maxResults: 12, numChars: 120, thumbWidth: 100, thumbHeight: 120, navText: "Tampilkan artikel selanjutnya &#9660;", resetToc: "Kembali ke Awal", noImage: "//2.bp.blogspot.com/-ex3V86fj4dQ/UrCQQa4cLsI/AAAAAAAAFdA/j2FCTmGOrog/s1100/no-thumbnail.png", loading: "<span>Memuat...</span>", counting: "<div>Memuat artikel...</div>", searching: "<span>Mencari...</span>"
+            homePage: getQueryVariable("url"), maxResults: 12, numChars: 120, thumbWidth: 100, thumbHeight: 120, navText: "Show next article &#9660;", resetToc: "Back to Home", noImage: "//2.bp.blogspot.com/-ex3V86fj4dQ/UrCQQa4cLsI/AAAAAAAAFdA/j2FCTmGOrog/s1100/no-thumbnail.png", loading: "<span>Loading...</span>", counting: "<div>Loading article...</div>", searching: "<span>Searching...</span>"
         }
         ,
         w=window,
@@ -353,7 +353,7 @@ _toc= {
                 o.b.children[0].disabled=false;
             }
             , e:function(json) {
-                var a=json.feed.category, b='<select id="label-sorter"><option value="" selected disabled>Pilih Kategori...</option>';
+                var a=json.feed.category, b='<select id="label-sorter"><option value="" selected disabled>Select category...</option>';
                 for(var i=0, len=a.length;
                 i<len;
                 i++) {
