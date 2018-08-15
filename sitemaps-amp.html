@@ -2,44 +2,213 @@
 <meta content='width=device-width, initial-scale=1' name='viewport'>
 <link href='https://fonts.googleapis.com/css?family=Roboto:300,300i,500,700,500i,900' rel='stylesheet' type='text/css'/>
 <style type='text/css'>
-body{font-family:'Open Sans',sans-serif;background: #fff;}
-*{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
-#table-outer{padding:7px 10px;margin:0 auto}
-#table-outer table{width:auto;margin:0 auto}
-#table-outer form{font:inherit}
-#table-outer label{display:block;text-align:right;margin:0 10px 0 0;padding:4px 0 0}
-#table-outer select[disabled]{opacity:.4}
-#post-searcher{display:block;margin:0;padding:0}
-#table-outer input,#table-outer select{width:100%;border:1px solid #dedede;border-radius:5px;margin:0;padding:5px;font-family: Roboto,sans-serif!important;font-size:16px!important;font-weight:500!important;text-transform:capitalize!important;outline:0;color:#333!important;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
-#table-outer select option{min-height:1.4em!important;}
-#table-outer input#feed-q{padding:5px 10px!important;}
-#feed-container{background:#fff;display:block;clear:both;margin:0;padding:0;list-style:none;height:400px;overflow-x:hidden;position:relative;border-top:none}
-#feed-container li{list-style:none;margin:0;padding:0;border-top:1px solid #eee;color:#555;width:auto;float:left;display:inline}
-#feed-container li .inner{margin:15px 0;height:auto;overflow:hidden;word-wrap:break-word;text-overflow:ellipsis}
-#feed-container li a{text-decoration:none;color:#2C2C2C;font-weight:500}
-#feed-container li a:hover{text-decoration:none;color:#E94141}
-#feed-container li .news-text{margin-top:5px;line-height:1.3em!important}
-#feed-container li img{margin:0 15px 5px 0;padding:7px 7px 7px 0;float:left;display:block;}
-#result-desc{margin:0;padding:0;}
-#result-desc div,#result-desc span{display:block;margin:0;padding:5px 0 7px;color:#D64D52}
-#result-desc div{color:inherit}
-#feed-nav{margin:10px 0 30px;text-align:center;font-weight:500}
-#feed-nav a,#feed-nav span{border:1px solid #dedede;border-radius:5px;padding:0;color:#757575;text-decoration:none;display:block;height:30px;line-height:32px}
-#feed-nav a,#feed-nav span:hover{color:#1B1B1B}
-#feed-nav a:active,#feed-nav a:hover{color:#555}
-#feed-nav span{cursor:wait}
-@media (max-width:600px){#table-outer table{margin:0 auto;width:100%}
-#feed-container,#table-outer{margin:0 auto}
-#feed-container li .inner{margin:5px auto;height:auto}
-#feedContainer li{float:none;display:block;width:auto;height:auto}
-#feed-container li .news-text, #feedContainer:after,#feed-container li img{display:none!important}
+
+#table-outer{
+ padding: 7px 10px;
+ margin: 0 auto;
 }
-@media screen and (max-width:414px){#table-outer table,#feed-container li{width:100%;}
-#table-outer table,#table-outer label{text-align:center}
-#table-outer table td{display:block;margin:0 auto 5px;clear:both;float:none}
-#table-outer label{margin:0;}
-#table-outer{padding:0;}
+
+#table-outer td{
+ border: none;
+ font-size: 16px;
 }
+
+#table-outer label {
+    display: block;
+    text-align: right;
+    margin: 0 10px 0 0;
+    padding: 4px 0 0;
+}
+
+#table-outer input, #table-outer select {
+    width: 100%;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    margin: 0;
+    padding: 5px;
+    font-size: 16px;
+    text-transform: capitalize;
+    outline: 0;
+    color: #666;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#feed-container,
+#feed-container li {
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+#post-searcher {
+    display: block;
+    margin: 0;
+    padding: 0
+}
+
+#feed-container {
+ position: relative;
+ padding-top: 15px;
+ margin: 0;
+ float: left;
+ width: 100%;
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: flex;
+ -ms-flex-wrap: wrap;
+ flex-wrap: wrap;
+ border-top: solid 1px rgba(0,0,0,0.07);
+ border-bottom: solid 1px rgba(0,0,0,0.07);
+}
+
+#feed-container li {
+ background: #ffffff;
+ min-width: 215px;
+ width: 0;
+ max-width: 285px;
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: flex;
+ -webkit-box-orient: vertical;
+ -webkit-box-direction: normal;
+ -ms-flex-direction: column;
+ flex-direction: column;
+ -webkit-box-flex: 1;
+ -ms-flex: 1 1 auto;
+ flex: 1 1 auto;
+ padding: 10px;
+ margin: 0 5px 20px 10px;
+ box-shadow: 0 2px 5px 1px rgba(0,0,0,0.1);
+}
+
+#feed-container li a {
+ position: relative;
+ text-decoration: none;
+ display: block;
+ transition: all .2s ease;
+ line-height: 22px;
+ font-size: 16px;
+ padding: 5px 0;
+}
+
+#feed-container li p {
+ margin: 0;
+ font-size: 14px;
+ line-height: 20px;
+ letter-spacing: 0.2px;
+}
+
+#feed-container li img {
+ display: inline;
+ float: left;
+ margin-right: 10px;
+ padding: 0;
+ border-radius: 3px;
+}
+
+#result-desc {
+    margin: 15px 0 0 0;
+    padding: 0;
+    text-align: center;
+}
+
+#result-desc div,
+#result-desc span {
+    display: block;
+    margin: 0;
+    padding: 5px 0 7px;
+    color: #D64D52
+}
+
+#result-desc div {
+    color: inherit
+}
+
+#feed-nav {
+    margin: 10px 0 30px;
+    text-align: center;
+    font-weight: 500;
+    display: inline-block;
+}
+
+#feed-nav a,
+#feed-nav span {
+    padding: 0;
+    color: #757575;
+    text-decoration: none;
+    display: block;
+    height: 30px;
+    line-height: 32px
+}
+
+#feed-nav a,
+#feed-nav span:hover {
+    color: #1B1B1B
+}
+
+#feed-nav a:active,
+#feed-nav a:hover {
+    color: #555
+}
+
+#feed-nav span {
+    cursor: wait
+}
+
+@media screen and (max-width:770px) {
+ #feed-container li img, #feed-container a.link-img {
+  display: none;
+ }
+ #feed-container li {
+  max-width: 100%;
+ }
+}
+
+@media screen and (max-width:414px) {
+
+ #feed-container{
+  padding-top: 0;
+ }
+
+ #feed-container li{
+  box-shadow: 0;
+  box-shadow: unset;
+  padding: 0;
+  margin: 2px 0;
+  border-bottom: solid 1px rgba(0,0,0,0.07);
+  text-align: center;
+ }
+
+ #feed-container li p{
+  display: none;
+ }
+
+    #table-outer table {
+        width: 100%;
+    }
+
+    #table-outer label,
+    #table-outer table {
+        text-align: center
+    }
+    
+    #table-outer td {
+        display: block;
+        margin: 0 auto 5px;
+        clear: both;
+        float: none
+    }
+
+    #table-outer label {
+        margin: 0
+    }
+    #table-outer {
+        padding: 0
+    }
+}
+  
 </style>
 <div id="table-outer">
 <table><tbody>
