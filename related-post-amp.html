@@ -6,71 +6,65 @@
     <title>Related Post</title>
     <style>
 
+    @font-face{font-family:Roboto;font-style:normal;src:local('Roboto Light'),local('Roboto-Light'),url(https://fonts.gstatic.com/s/roboto/v16/Hgo13k-tfSpn0qi1SFdUfT8E0i7KZn-EPnyo3HZu7kw.woff) format('woff'),url(https://fonts.gstatic.com/s/roboto/v16/0eC6fl06luXEYWpBSJvXCBJtnKITppOI_IvcXXDNrsc.woff2) format('woff2'),url(https://fonts.gstatic.com/s/roboto/v16/Hgo13k-tfSpn0qi1SFdUfSZ2oysoEQEeKwjgmXLRnTc.ttf) format('truetype')}@font-face{font-family:Roboto;font-style:normal;font-weight:500;src:local('Roboto Medium'),local('Roboto-Medium'),url(https://fonts.gstatic.com/s/roboto/v16/RxZJdnzeo3R5zSexge8UUT8E0i7KZn-EPnyo3HZu7kw.woff) format('woff'),url(https://fonts.gstatic.com/s/roboto/v16/ZLqKeelYbATG60EpZBSDyxJtnKITppOI_IvcXXDNrsc.woff2) format('woff2'),url(https://fonts.gstatic.com/s/roboto/v16/RxZJdnzeo3R5zSexge8UUSZ2oysoEQEeKwjgmXLRnTc.ttf) format('truetype')}@font-face{font-family:Roboto;font-style:normal;font-weight:900;src:local('Roboto Black'),local('Roboto-Black'),url(https://fonts.gstatic.com/s/roboto/v16/mnpfi9pxYH-Go5UiibESIj8E0i7KZn-EPnyo3HZu7kw.woff) format('woff'),url(https://fonts.gstatic.com/s/roboto/v16/s7gftie1JANC-QmDJvMWZhJtnKITppOI_IvcXXDNrsc.woff2) format('woff2'),url(https://fonts.gstatic.com/s/roboto/v16/mnpfi9pxYH-Go5UiibESIiZ2oysoEQEeKwjgmXLRnTc.ttf) format('truetype')}@font-face{font-family:Roboto;font-style:italic;font-weight:300;src:local('Roboto Light Italic'),local('Roboto-LightItalic'),url(https://fonts.gstatic.com/s/roboto/v16/7m8l7TlFO-S3VkhHuR0at4bN6UDyHWBl620a-IRfuBk.woff) format('woff'),url(https://fonts.gstatic.com/s/roboto/v16/7m8l7TlFO-S3VkhHuR0atzTOQ_MqJVwkKsUn0wKzc2I.woff2) format('woff2'),url(https://fonts.gstatic.com/s/roboto/v16/7m8l7TlFO-S3VkhHuR0atywlidHJgAgmTjOEEzwu1L8.ttf) format('truetype')}@font-face{font-family:Roboto;font-style:italic;font-weight:500;src:local('Roboto Medium Italic'),local('Roboto-MediumItalic'),url(https://fonts.gstatic.com/s/roboto/v16/OLffGBTaF0XFOW1gnuHF0YbN6UDyHWBl620a-IRfuBk.woff) format('woff'),url(https://fonts.gstatic.com/s/roboto/v16/OLffGBTaF0XFOW1gnuHF0TTOQ_MqJVwkKsUn0wKzc2I.woff2) format('woff2'),url(https://fonts.gstatic.com/s/roboto/v16/OLffGBTaF0XFOW1gnuHF0SwlidHJgAgmTjOEEzwu1L8.ttf) format('truetype')}
+ 
+body {margin: 0;font-family: Roboto,Arial,sans-serif}
+ 
+    body ul {
+        padding: 0;
+        margin: 0;
+        float: left;
+        width: 100%;
+     }
+ 
+    body li {
+        list-style-type: none!important;
+        padding: 5px 0 5px;
+        height: auto;
+        float: left;
+        display: inline;
+        line-height: 1em;
+        margin: 0;
+        width: 50%;
+        cursor: pointer;
+        border-bottom: solid 1px rgba(0,0,0,0.1);
+     }
+ 
+span.news-text {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.2em
+ }
+ 
+body ul li a {
+    text-decoration: none;
+    display: block;
+    color: #15c;
+    transition: all .2s ease;
+    line-height: 1em
+ }
+ 
+    body ul li a:hover {text-decoration: underline}
+ 
+body ul li:hover a.relinkjdulx {color: #EA4335}
+ 
+body ul li img {
+    float: left;
+    width: 75px;
+    margin-right: 10px;
+    padding: 0;
+    border-radius: 3px
+ }
+ 
+.relinkjdulx {font-size: 17px;margin-bottom:5px} 
+ 
+ @media only screen and (max-width: 500px) {
+body li {
+    width: 100%;
+    }
+}
 
-        body {
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;
-        }
-        
-        body ul {
-            padding: 0;
-            margin: 0;
-            float: left
-        }
-        
-        body li {
-            list-style-type: none!important;
-            padding: 5px 0 5px;
-            height: auto;
-            float: left;
-            display: inline;
-            line-height: 1em;
-            margin: 0;
-            width: 100%
-        }
-        
-        span.news-text {
-            font-size: 14px;
-            color: #666;
-            line-height: 1.2em
-        }
-        
-        body ul li a {
-            cursor: pointer;
-            text-decoration: none;
-            display: block;
-            color: #15c;
-            transition: all .2s ease;
-            font-weight: 500;
-            line-height: 1em
-        }
-        
-        body ul li a:hover {
-            text-decoration: underline
-        }
-        
-        body ul li:hover a.relinkjdulx {
-            color: #EA4335
-        }
-        
-        body ul li img {
-            float: left;
-            margin-right: 10px;
-            padding: 0;
-            border-radius: 3px
-        }
-        
-        .relinkjdulx {
-            font-size: 17px;
-            margin-bottom: 5px
-        }
-        
-        @media only screen and (max-width:600px) {
-            span.news-text {
-                display: none
-            }
-        }
-    </style>
+</style>
 </head>
 
 <body>
@@ -122,7 +116,7 @@
                         o = relgambar[a];
                     reljudul[a] = reljudul[n], relurls[a] = relurls[n], relcuplikan[a] = relcuplikan[n], relgambar[a] = relgambar[n], reljudul[n] = u, relurls[n] = i, relcuplikan[n] = s, relgambar[n] = o
                 }
-                for (var g, c = 0, p = Math.floor((reljudul.length - 1) * Math.random()), m = p, d = getQueryVariable("pos"); c < relmaxtampil && (relurls[p] == d || (g = "<li>", g += "<a onclick='window.open(&#039;" + relurls[p] + "&#039;,&#039;" + target + "&#039;);' rel='nofollow' title='" + reljudul[p] + "'><img alt='" + reljudul[p] + "' src='" + relgambar[p] + "'/></a>", g += "<a class='relinkjdulx' data-href='" + relurls[p] + "' onclick='window.open(&#039;" + relurls[p] + "&#039;,&#039;" + target + "&#039;);'>" + reljudul[p] + "</a>", g += "<span class='news-text'>" + relcuplikan[p] + " ... </span>", g += "</li>", document.write(g), ++c != relmaxtampil)) && (p < reljudul.length - 1 ? p++ : p = 0, p != m););
+                for (var g, c = 0, p = Math.floor((reljudul.length - 1) * Math.random()), m = p, d = document.URL; c < relmaxtampil && (relurls[p] == d || (g = "<li class='news-title clearfix' onclick='window.open(&#39;"+ relurls[p] + "&#39;,&#39;_blank&#39;)'>", g += "<img src='" + relgambar[p] + "' alt='" + reljudul[p] + "'/>", g += "<a class='relinkjdulx'>" + reljudul[p] + "</a>", g += "<span class='news-text'>" + relcuplikan[p] + " ... </span>", g += "</li>", document.write(g), ++c != relmaxtampil)) && (p < reljudul.length - 1 ? p++ : p = 0, p != m););
             }
             for (var labels = getQueryVariable("labels"), relmaxtampil = getQueryVariable("num"), url = getQueryVariable("url"), res = labels.split(","), i = 0, text = ""; res[i];) text += '<script src="' + url + "/feeds/posts/default/-/" + res[i] + '?alt=json&amp;callback=relpostimgcuplik&amp;max-results=50"><\/script>', i++;
             var relnojudul = 0,
