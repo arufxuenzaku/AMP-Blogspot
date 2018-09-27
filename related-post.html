@@ -1,126 +1,132 @@
 <!DOCTYPE html>
 <HTML dir='ltr' lang='id-ID'>
-<head>
-	<meta charset='utf-8'/>
-	<title>Related Post</title>
-	<style type='text/css'>
 
-	@font-face{font-family:Roboto;font-style:normal;src:local('Roboto Light'),local('Roboto-Light'),url(https://fonts.gstatic.com/s/roboto/v16/Hgo13k-tfSpn0qi1SFdUfT8E0i7KZn-EPnyo3HZu7kw.woff) format('woff'),url(https://fonts.gstatic.com/s/roboto/v16/0eC6fl06luXEYWpBSJvXCBJtnKITppOI_IvcXXDNrsc.woff2) format('woff2'),url(https://fonts.gstatic.com/s/roboto/v16/Hgo13k-tfSpn0qi1SFdUfSZ2oysoEQEeKwjgmXLRnTc.ttf) format('truetype')}@font-face{font-family:Roboto;font-style:normal;font-weight:500;src:local('Roboto Medium'),local('Roboto-Medium'),url(https://fonts.gstatic.com/s/roboto/v16/RxZJdnzeo3R5zSexge8UUT8E0i7KZn-EPnyo3HZu7kw.woff) format('woff'),url(https://fonts.gstatic.com/s/roboto/v16/ZLqKeelYbATG60EpZBSDyxJtnKITppOI_IvcXXDNrsc.woff2) format('woff2'),url(https://fonts.gstatic.com/s/roboto/v16/RxZJdnzeo3R5zSexge8UUSZ2oysoEQEeKwjgmXLRnTc.ttf) format('truetype')}@font-face{font-family:Roboto;font-style:normal;font-weight:900;src:local('Roboto Black'),local('Roboto-Black'),url(https://fonts.gstatic.com/s/roboto/v16/mnpfi9pxYH-Go5UiibESIj8E0i7KZn-EPnyo3HZu7kw.woff) format('woff'),url(https://fonts.gstatic.com/s/roboto/v16/s7gftie1JANC-QmDJvMWZhJtnKITppOI_IvcXXDNrsc.woff2) format('woff2'),url(https://fonts.gstatic.com/s/roboto/v16/mnpfi9pxYH-Go5UiibESIiZ2oysoEQEeKwjgmXLRnTc.ttf) format('truetype')}@font-face{font-family:Roboto;font-style:italic;font-weight:300;src:local('Roboto Light Italic'),local('Roboto-LightItalic'),url(https://fonts.gstatic.com/s/roboto/v16/7m8l7TlFO-S3VkhHuR0at4bN6UDyHWBl620a-IRfuBk.woff) format('woff'),url(https://fonts.gstatic.com/s/roboto/v16/7m8l7TlFO-S3VkhHuR0atzTOQ_MqJVwkKsUn0wKzc2I.woff2) format('woff2'),url(https://fonts.gstatic.com/s/roboto/v16/7m8l7TlFO-S3VkhHuR0atywlidHJgAgmTjOEEzwu1L8.ttf) format('truetype')}@font-face{font-family:Roboto;font-style:italic;font-weight:500;src:local('Roboto Medium Italic'),local('Roboto-MediumItalic'),url(https://fonts.gstatic.com/s/roboto/v16/OLffGBTaF0XFOW1gnuHF0YbN6UDyHWBl620a-IRfuBk.woff) format('woff'),url(https://fonts.gstatic.com/s/roboto/v16/OLffGBTaF0XFOW1gnuHF0TTOQ_MqJVwkKsUn0wKzc2I.woff2) format('woff2'),url(https://fonts.gstatic.com/s/roboto/v16/OLffGBTaF0XFOW1gnuHF0SwlidHJgAgmTjOEEzwu1L8.ttf) format('truetype')}
+<head>
+    <meta charset='utf-8' />
+    <title>Related Post</title>
+    <style>
  
-body {margin: 0;font-family: Roboto,Arial,sans-serif}
+body {margin: 0;font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;}
  
-	body ul {
-		padding: 0;
-		margin: 0;
-		float: left;
-		width: 100%;
-	 }
+    body ul {
+        padding: 0;
+        margin: 0;
+        float: left;
+        width: 100%;
+     }
  
-	body li {
-		list-style-type: none!important;
-		padding: 5px 0 5px;
-		height: auto;
-		float: left;
-		display: inline;
-		line-height: 1em;
-		margin: 0;
-		width: 50%;
-		cursor: pointer;
-		border-bottom: solid 1px rgba(0,0,0,0.1);
-	 }
+    body li {
+        list-style-type: none!important;
+        padding: 5px 0 5px;
+        height: auto;
+        float: left;
+        display: inline;
+        line-height: 1em;
+        margin: 0;
+        width: 50%;
+        cursor: pointer;
+        border-bottom: solid 1px rgba(0,0,0,0.1);
+     }
  
 span.news-text {
-	font-size: 14px;
-	color: #666;
-	line-height: 1.2em
+    font-size: 15px;
+    color: #666;
+    font-weight: 300;
  }
  
 body ul li a {
-	text-decoration: none;
-	display: block;
-	color: #15c;
-	transition: all .2s ease;
-	line-height: 1em
+    text-decoration: none;
+    display: block;
+    color: #15c;
+    transition: all .2s ease;
+    line-height: 1em;
+    font-weight: 300;
  }
  
-	body ul li a:hover {text-decoration: underline}
+    body ul li a:hover {text-decoration: underline}
  
 body ul li:hover a.relinkjdulx {color: #EA4335}
  
 body ul li img {
-	float: left;
-	width: 75px;
-	margin-right: 10px;
-	padding: 0;
-	border-radius: 3px
+    float: left;
+    width: 75px;
+    margin-right: 10px;
+    padding: 0;
+    border-radius: 3px
  }
  
 .relinkjdulx {font-size: 17px;margin-bottom:5px} 
  
  @media only screen and (max-width: 500px) {
 body li {
-	width: 100%;
+    width: 100%;
     }
 }
 
 </style>
 </head>
+
 <body>
-	<ul>
-<script>
-	function getQueryVariable(r) {
-	    for (var l = window.location.search.substring(1).split("&"), e = 0; e < l.length; e++) {
-	        var t = l[e].split("=");
-	        if (t[0] == r) return t[1]
-	    }
-	    return !1
-	}
+    <ul>
+        <script>
+            function getQueryVariable(r) {
+                for (var l = window.location.search.substring(1).split("&"), e = 0; e < l.length; e++) {
+                    var t = l[e].split("=");
+                    if (t[0] == r) return t[1]
+                }
+                return !1
+            }
 
-	function saringtags(r, l) {
-	    for (var e = r.split("<"), t = 0; t < e.length; t++) - 1 != e[t].indexOf(">") && (e[t] = e[t].substring(e[t].indexOf(">") + 1, e[t].length));
-	    return e = e.join(""), e = e.substring(0, l - 1)
-	}
+            function saringtags(r, l) {
+                for (var e = r.split("<"), t = 0; t < e.length; t++) - 1 != e[t].indexOf(">") && (e[t] = e[t].substring(e[t].indexOf(">") + 1, e[t].length));
+                return e = e.join(""), e = e.substring(0, l - 1)
+            }
+            var simg = getQueryVariable("si"),
+                rsimg = (simg == false) ? "/s72-c/" : "/" + simg + "/",
+                tg = getQueryVariable("newtab"),
+                target = (tg == false) ? "_top" : "/_blank/";
 
-	function relpostimgcuplik(r) {
-	    for (var l = 0; l < r.feed.entry.length; l++) {
-	        var e = r.feed.entry[l];
-	        reljudul[relnojudul] = e.title.$t, postcontent = "", "content" in e ? postcontent = e.content.$t : "summary" in e && (postcontent = e.summary.$t), relcuplikan[relnojudul] = saringtags(postcontent, numchars), postimg = "media$thumbnail" in e ? e.media$thumbnail.url.replace(/.*?:\/\//g, "//") : "https://1.bp.blogspot.com/-LGEolwXn4BM/WS9-g9OMA_I/AAAAAAAAAU4/LWkMJrn8RI8m56N1U-10ZuLdAuFFJqTxQCLcB/s72/No%2BImage.png", relgambar[relnojudul] = postimg;
-	        for (var t = 0; t < e.link.length; t++)
-	            if ("alternate" == e.link[t].rel) {
-	                relurls[relnojudul] = e.link[t].href.replace(/.*?:\/\//g, "//");
-	                break
-	            }
-	        relnojudul++
-	    }
-	}
+            function relpostimgcuplik(r) {
+                for (var l = 0; l < r.feed.entry.length; l++) {
+                    var e = r.feed.entry[l];
+                    reljudul[relnojudul] = e.title.$t, postcontent = "", "content" in e ? postcontent = e.content.$t : "summary" in e && (postcontent = e.summary.$t), relcuplikan[relnojudul] = saringtags(postcontent, numchars), postimg = "media$thumbnail" in e ? e.media$thumbnail.url.replace(/.*?:\/\//g, "//").replace(/\/s[0-9]+(\-c)?\//, rsimg) : "https://1.bp.blogspot.com/-LGEolwXn4BM/WS9-g9OMA_I/AAAAAAAAAU4/LWkMJrn8RI8m56N1U-10ZuLdAuFFJqTxQCLcB/s72/No%2BImage.png", relgambar[relnojudul] = postimg;
+                    for (var t = 0; t < e.link.length; t++)
+                        if ("alternate" == e.link[t].rel) {
+                            relurls[relnojudul] = e.link[t].href;
+                            break
+                        }
+                    relnojudul++
+                }
+            }
 
-	function contains(r, l) {
-	    for (var e = 0; e < r.length; e++)
-	        if (r[e] == l) return !0;
-	    return !1
-	}
+            function contains(r, l) {
+                for (var e = 0; e < r.length; e++)
+                    if (r[e] == l) return !0;
+                return !1
+            }
 
-	function artikelterkait() {
-	    for (var r = new Array(0), l = new Array(0), e = new Array(0), t = new Array(0), a = 0; a < relurls.length; a++) contains(r, relurls[a]) || (r.length += 1, r[r.length - 1] = relurls[a], l.length += 1, l[l.length - 1] = reljudul[a], e.length += 1, e[e.length - 1] = relcuplikan[a], t.length += 1, t[t.length - 1] = relgambar[a]);
-	    for (reljudul = l, relurls = r, relcuplikan = e, relgambar = t, a = 0; a < reljudul.length; a++) {
-	        var n = Math.floor((reljudul.length - 1) * Math.random()),
-	            u = reljudul[a],
-	            i = relurls[a],
-	            s = relcuplikan[a],
-	            o = relgambar[a];
-	        reljudul[a] = reljudul[n], relurls[a] = relurls[n], relcuplikan[a] = relcuplikan[n], relgambar[a] = relgambar[n], reljudul[n] = u, relurls[n] = i, relcuplikan[n] = s, relgambar[n] = o
-	    }
-	    for (var g, c = 0, p = Math.floor((reljudul.length - 1) * Math.random()), m = p, d = document.URL; c < relmaxtampil && (relurls[p] == d || (g = "<li class='news-title clearfix' onclick='window.open(&#39;"+ relurls[p] + "&#39;,&#39;_blank&#39;)'>", g += "<img src='" + relgambar[p] + "' alt='" + reljudul[p] + "'/>", g += "<a class='relinkjdulx'>" + reljudul[p] + "</a>", g += "<span class='news-text'>" + relcuplikan[p] + " ... </span>", g += "</li>", document.write(g), ++c != relmaxtampil)) && (p < reljudul.length - 1 ? p++ : p = 0, p != m););
-	}
-	for (var labels = getQueryVariable("labels"), relmaxtampil = getQueryVariable("num"), url = getQueryVariable("url"), res = labels.split(","), i = 0, text = ""; res[i];) text += '<script src="' + url + "/feeds/posts/default/-/" + res[i] + '?alt=json-in-script&amp;callback=relpostimgcuplik&amp;max-results=50" type="text/javascript"><\/script>', i++;
-	var relnojudul = 0,
-	    numchars = 80,
-	    reljudul = new Array,
-	    relurls = new Array,
-	    relcuplikan = new Array,
-	    relgambar = new Array;
-	document.write(text + '<script type="text/javascript">artikelterkait();<\/script>');
-</script>
-	</ul>
+            function artikelterkait() {
+                for (var r = new Array(0), l = new Array(0), e = new Array(0), t = new Array(0), a = 0; a < relurls.length; a++) contains(r, relurls[a]) || (r.length += 1, r[r.length - 1] = relurls[a], l.length += 1, l[l.length - 1] = reljudul[a], e.length += 1, e[e.length - 1] = relcuplikan[a], t.length += 1, t[t.length - 1] = relgambar[a]);
+                for (reljudul = l, relurls = r, relcuplikan = e, relgambar = t, a = 0; a < reljudul.length; a++) {
+                    var n = Math.floor((reljudul.length - 1) * Math.random()),
+                        u = reljudul[a],
+                        i = relurls[a],
+                        s = relcuplikan[a],
+                        o = relgambar[a];
+                    reljudul[a] = reljudul[n], relurls[a] = relurls[n], relcuplikan[a] = relcuplikan[n], relgambar[a] = relgambar[n], reljudul[n] = u, relurls[n] = i, relcuplikan[n] = s, relgambar[n] = o
+                }
+                for (var g, c = 0, p = Math.floor((reljudul.length - 1) * Math.random()), m = p, d = getQueryVariable("pos"); c < relmaxtampil && (relurls[p] == d || (g = "<li onclick='window.open(&#39;"+ relurls[p] + "&#39;,&#39;_blank&#39;)'>", g += "<img alt='" + reljudul[p] + "' src='" + relgambar[p] + "'/>", g += "<a class='relinkjdulx'>" + reljudul[p] + "</a>", g += "<span class='news-text'>" + relcuplikan[p] + " ... </span>", g += "</li>", document.write(g), ++c != relmaxtampil)) && (p < reljudul.length - 1 ? p++ : p = 0, p != m););
+            }
+            for (var labels = getQueryVariable("labels"), relmaxtampil = getQueryVariable("num"), url = getQueryVariable("url"), res = labels.split(","), i = 0, text = ""; res[i];) text += '<script src="' + url + "/feeds/posts/default/-/" + res[i] + '?alt=json&amp;callback=relpostimgcuplik&amp;max-results=50"><\/script>', i++;
+            var relnojudul = 0,
+                numchars = 120,
+                reljudul = new Array,
+                relurls = new Array,
+                relcuplikan = new Array,
+                relgambar = new Array;
+            document.write(text + '<script>artikelterkait();<\/script>');
+        </script>
+    </ul>
 </body>
+
 </HTML>
