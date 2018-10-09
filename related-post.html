@@ -92,7 +92,7 @@ body li {
             function relpostimgcuplik(r) {
                 for (var l = 0; l < r.feed.entry.length; l++) {
                     var e = r.feed.entry[l];
-                    reljudul[relnojudul] = e.title.$t, postcontent = "", "content" in e ? postcontent = e.content.$t : "summary" in e && (postcontent = e.summary.$t), relcuplikan[relnojudul] = saringtags(postcontent, numchars), postimg = "media$thumbnail" in e ? e.media$thumbnail.url.replace(/.*?:\/\//g, "//").replace(/\/s[0-9]+(\-c)?\//, rsimg) : "https://1.bp.blogspot.com/-LGEolwXn4BM/WS9-g9OMA_I/AAAAAAAAAU4/LWkMJrn8RI8m56N1U-10ZuLdAuFFJqTxQCLcB/s72/No%2BImage.png", relgambar[relnojudul] = postimg;
+                    reljudul[relnojudul] = e.title.$t, postcontent = "", "content" in e ? postcontent = e.content.$t : "summary" in e && (postcontent = e.summary.$t), relcuplikan[relnojudul] = saringtags(postcontent, numchars), postimg = "media$thumbnail" in e ? e.media$thumbnail.url.replace(/.*?:\/\//g, "https://cdn.staticaly.com/img/").replace(/\/s[0-9]+(\-c)?\//, rsimg) : "https://1.bp.blogspot.com/-LGEolwXn4BM/WS9-g9OMA_I/AAAAAAAAAU4/LWkMJrn8RI8m56N1U-10ZuLdAuFFJqTxQCLcB/s72/No%2BImage.png", relgambar[relnojudul] = postimg;
                     for (var t = 0; t < e.link.length; t++)
                         if ("alternate" == e.link[t].rel) {
                             relurls[relnojudul] = e.link[t].href;
