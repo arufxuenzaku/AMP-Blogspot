@@ -16,14 +16,14 @@ body {margin: 0;font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe
      }
  
     body li {
-        list-style-type: none!important;
-        padding: 5px 5px 5px 0;
+        list-style-type: none !important;
+        padding: 5px 0;
         height: auto;
         float: left;
         display: inline;
         line-height: 18px;
-        margin: 0;
-        width: calc(50% - 5px);
+        margin: 0 5px 0 0;
+        width: calc(33.3% - 5px);
         cursor: pointer;
         border-bottom: solid 1px rgba(0,0,0,0.1);
      }
@@ -36,18 +36,19 @@ span.news-text {
 body ul li a {
     text-decoration: none;
     display: block;
-    /*color: #15c;*/
+    color: #333;
     transition: all .2s ease;
-    line-height: 22px;
+    line-height: 20px;
+    font-weight: 300;
  }
  
-    body ul li a:hover {text-decoration: underline}
+    /*body ul li a:hover {text-decoration: underline}*/
  
-body ul li:hover a.relinkjdulx {color: #EA4335}
+body ul li:hover a.relinkjdulx {color: #1fb9fb}
  
 body ul li img {
     float: left;
-    margin-right: 7px;
+    margin-right: 8px;
     padding: 0;
     border-radius: 3px
  }
@@ -57,7 +58,7 @@ body ul li:hover img{
     transition:all 400ms ease-in-out;
 }
         
-.relinkjdulx {font-size: 17px;margin-bottom:5px} 
+.relinkjdulx {font-size: 16px;margin-bottom:5px} 
  
  @media only screen and (max-width: 500px) {
 body li {
