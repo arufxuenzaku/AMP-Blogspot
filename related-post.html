@@ -8,14 +8,14 @@
  
 body {margin: 0;font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif;}
  
-    body ul {
+    ul {
         padding: 0;
         margin: 0;
         float: left;
         width: 100%;
      }
  
-    body li {
+    li {
         list-style-type: none !important;
         padding: 5px 0;
         height: auto;
@@ -28,46 +28,48 @@ body {margin: 0;font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe
         border-bottom: solid 1px rgba(0,0,0,0.1);
      }
  
-span.news-text {
+span {
     font-size: 15px;
     color: #666;
  }
  
-body ul li a {
+a {
     text-decoration: none;
     display: block;
     color: #333;
+    font-size: 16px;
+    margin-bottom:5px;
     transition: all .2s ease;
-    line-height: 20px;
-    font-weight: 300;
  }
  
     /*body ul li a:hover {text-decoration: underline}*/
  
-body ul li:hover a.relinkjdulx {color: #1fb9fb}
+li:hover a {
+    color: #1fb9fb;
+    line-height: 20px;
+    font-weight: 300;
+}
  
-body ul li img {
+img {
     float: left;
     margin-right: 8px;
     padding: 0;
     border-radius: 3px
  }
  
-body ul li:hover img{
+li:hover img{
     -webkit-filter: contrast(150%);
     transition:all 400ms ease-in-out;
 }
-        
-.relinkjdulx {font-size: 16px;margin-bottom:5px} 
- 
+         
 @media only screen and (min-width: 500px) {
-body li {
+li {
     width: calc(50% - 5px);
     }
 }
 
 @media only screen and (min-width: 770px) {
-body li {
+li {
     width: calc(33.3% - 5px);
     }
 }
@@ -124,7 +126,7 @@ body li {
                         o = relgambar[a];
                     reljudul[a] = reljudul[n], relurls[a] = relurls[n], relcuplikan[a] = relcuplikan[n], relgambar[a] = relgambar[n], reljudul[n] = u, relurls[n] = i, relcuplikan[n] = s, relgambar[n] = o
                 }
-                for (var g, c = 0, p = Math.floor((reljudul.length - 1) * Math.random()), m = p, d = getQueryVariable("pos"); c < relmaxtampil && (relurls[p] == d || (g = "<li onclick='window.open(&#39;"+ relurls[p] + "&#39;,&#39;_blank&#39;)'>", g += "<img alt='" + reljudul[p] + "' src='" + relgambar[p] + "'/>", g += "<a class='relinkjdulx'>" + reljudul[p] + "</a>", g += "</li>", document.write(g), ++c != relmaxtampil)) && (p < reljudul.length - 1 ? p++ : p = 0, p != m););
+                for (var g, c = 0, p = Math.floor((reljudul.length - 1) * Math.random()), m = p, d = getQueryVariable("pos"); c < relmaxtampil && (relurls[p] == d || (g = "<li onclick='window.open(&#39;"+ relurls[p] + "&#39;,&#39;_blank&#39;)'>", g += "<img alt='" + reljudul[p] + "' src='" + relgambar[p] + "'/>", g += "<a>" + reljudul[p] + "</a>", g += "</li>", document.write(g), ++c != relmaxtampil)) && (p < reljudul.length - 1 ? p++ : p = 0, p != m););
             }
             for (var labels = getQueryVariable("labels"), relmaxtampil = getQueryVariable("num"), url = getQueryVariable("url"), res = labels.split(","), i = 0, text = ""; res[i];) text += '<script src="' + url + "/feeds/posts/default/-/" + res[i] + '?alt=json&amp;callback=relpostimgcuplik&amp;max-results=50"><\/script>', i++;
             var relnojudul = 0,
