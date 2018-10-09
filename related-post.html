@@ -36,7 +36,7 @@ span.news-text {
 body ul li a {
     text-decoration: none;
     display: block;
-    color: #15c;
+    /*color: #15c;*/
     transition: all .2s ease;
     line-height: 22px;
  }
@@ -117,7 +117,7 @@ body li {
                         o = relgambar[a];
                     reljudul[a] = reljudul[n], relurls[a] = relurls[n], relcuplikan[a] = relcuplikan[n], relgambar[a] = relgambar[n], reljudul[n] = u, relurls[n] = i, relcuplikan[n] = s, relgambar[n] = o
                 }
-                for (var g, c = 0, p = Math.floor((reljudul.length - 1) * Math.random()), m = p, d = getQueryVariable("pos"); c < relmaxtampil && (relurls[p] == d || (g = "<li onclick='window.open(&#39;"+ relurls[p] + "&#39;,&#39;_blank&#39;)'>", g += "<img alt='" + reljudul[p] + "' src='" + relgambar[p] + "'/>", g += "<a class='relinkjdulx'>" + reljudul[p] + "</a>", g += "<span class='news-text'>" + relcuplikan[p] + "...</span>", g += "</li>", document.write(g), ++c != relmaxtampil)) && (p < reljudul.length - 1 ? p++ : p = 0, p != m););
+                for (var g, c = 0, p = Math.floor((reljudul.length - 1) * Math.random()), m = p, d = getQueryVariable("pos"); c < relmaxtampil && (relurls[p] == d || (g = "<li onclick='window.open(&#39;"+ relurls[p] + "&#39;,&#39;_blank&#39;)'>", g += "<img alt='" + reljudul[p] + "' src='" + relgambar[p] + "'/>", g += "<a class='relinkjdulx'>" + reljudul[p] + "</a>", g += "</li>", document.write(g), ++c != relmaxtampil)) && (p < reljudul.length - 1 ? p++ : p = 0, p != m););
             }
             for (var labels = getQueryVariable("labels"), relmaxtampil = getQueryVariable("num"), url = getQueryVariable("url"), res = labels.split(","), i = 0, text = ""; res[i];) text += '<script src="' + url + "/feeds/posts/default/-/" + res[i] + '?alt=json&amp;callback=relpostimgcuplik&amp;max-results=50"><\/script>', i++;
             var relnojudul = 0,
