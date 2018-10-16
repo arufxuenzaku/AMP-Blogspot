@@ -321,7 +321,7 @@ _toc= {
                         if(i==a.length)break;
                         b=a[i].title.$t;
                         _d=("summary"in a[i])?a[i].summary.$t.replace(/<br ?\/?>/ig, " ").replace(/<(.*?)>/g, "").replace(/<iframe/ig, "").substring(0, cfg.numChars): "";
-                        g=("media$thumbnail"in a[i])?a[i].media$thumbnail.url.replace(/.*?: \/\ //g , "//").replace(/\/s[0-9]+\-c/,"\/s"+ cfg.thumbWidth+""):cfg.noImage.replace(/\/s[0-9]+\-c/,"\/s"+ cfg.thumbWidth+"");for(var j=0,jen=a[i].link.length;j<jen;j++){c=(a[i].link[j].rel=="alternate")?a[i].link[j].href:"#";}
+                        g=("media$thumbnail"in a[i])?a[i].media$thumbnail.url.replace(/.*?:\/\//g, "https://cdn.staticaly.com/img/").replace(/\/s[0-9]+\-c/,"\/s"+ cfg.thumbWidth+""):cfg.noImage.replace(/\/s[0-9]+\-c/,"\/s"+ cfg.thumbWidth+"");for(var j=0,jen=a[i].link.length;j<jen;j++){c=(a[i].link[j].rel=="alternate")?a[i].link[j].href:"#";}
                         for(var k=0, ken=a[i].link.length;
                         k<ken;
                         k++) {
